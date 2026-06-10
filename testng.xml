@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Automation Suite">
+
+    <listeners>
+        <listener class-name="utils.ExtentReportManager" />
+    </listeners>
+
+    <test name="Full 15-Component Regression Run">
+        <classes>
+            <class name="tests.AutomationTest">
+                <methods>
+              <include name="prelink_explore" />
+                   <include name="GUI_Elements_test" />
+                    <include name="Upload_Files_test" />       
+                    <include name="TableTest" />  
+                    <include name="Form" />                    
+                    <include name="ShadowDOM" />              
+                    <include name="Tabs" />                  
+                   <include name="Dynamic_Button" />          
+                     <include name="Alertsandpopups" />         
+                   <include name="MouseHover" />               
+                    <include name="doubleClick" />           
+                     <include name="Draganddrop" />               
+                   <include name="slider" />                   
+                    <include name="scrollingDropdown" />    
+                    <include name="LaptopLinks" />            
+              <include name="verifyBrokenLinks" />   
+               <include name="Hidden_Elements_AJAX" />  
+               <include name="download" />   
+                    </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

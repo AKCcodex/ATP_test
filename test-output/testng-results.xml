@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Opening Chrome Browser...]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to: https://testautomationpractice.blogspot.com]]>
+    </line>
+    <line>
+      <![CDATA[Step: Browsing all navigation bar links...]]>
+    </line>
+    <line>
+      <![CDATA[Success: All nav bar links browsed successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Filling out registration form details...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Form elements submitted successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Uploading sample files...]]>
+    </line>
+    <line>
+      <![CDATA[Step: Cleaning up dummy test files...]]>
+    </line>
+    <line>
+      <![CDATA[Success: File uploads verified.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Auditing table data structures...]]>
+    </line>
+    <line>
+      <![CDATA[Step: Static Table Validation...]]>
+    </line>
+    <line>
+      <![CDATA[Step: Dynamic Table Extraction...]]>
+    </line>
+    <line>
+      <![CDATA[Step: Traversing pagination sheets...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Web Table checks pass cleanly.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Typing paragraphs into form sections...]]>
+    </line>
+    <line>
+      <![CDATA[Success: All form text blocks verified.]]>
+    </line>
+    <line>
+      <![CDATA[Step: ERunning: Shadow DOM Test...]]>
+    </line>
+    <line>
+      <![CDATA[Step: Cleaning up dummy test files...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Shadow DOM .]]>
+    </line>
+    <line>
+      <![CDATA[Step: Testing dynamic multi-tab features...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Browser tabs handled cleanly.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Clicking dynamic button element...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Dynamic button interaction complete.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Handling alerts, confirms, prompts and child windows...]]>
+    </line>
+    <line>
+      <![CDATA[Success: All popup dialogs resolved.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Hovering over menu to reveal links...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Mouse hover dropdown selection completed.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Simulating double click action...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Double click event registered.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Dragging element to drop zone...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Drag and drop operation finished.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Shifting minimum and maximum slider bars...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Slider positions adjusted successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Locating and picking item from scrollable dropdown...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Target item chosen from list.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Checking store redirection pages (Apple, Dell, Lenovo)...]]>
+    </line>
+    <line>
+      <![CDATA[Success: External stores loaded fine.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Scanning HTTP response codes for dead links...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Broken link network sweep finished.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Toggling hidden elements and loading AJAX content...]]>
+    </line>
+    <line>
+      <![CDATA[Success: Hidden elements toggled and AJAX content loaded.]]>
+    </line>
+    <line>
+      <![CDATA[Step: Triggering file download...]]>
+    </line>
+    <line>
+      <![CDATA[Success: File downloaded successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Closing browser and killing driver session...]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-06-10T18:03:56 IST" name="Master Automation Suite" finished-at="2026-06-10T18:08:48 IST" duration-ms="292368">
+    <groups>
+      <group name="slider">
+        <method signature="AutomationTest.slider()[pri:12, instance:tests.AutomationTest@28eaa59a]" name="slider" class="tests.AutomationTest"/>
+      </group> <!-- slider -->
+      <group name="pre">
+        <method signature="AutomationTest.prelink_explore()[pri:0, instance:tests.AutomationTest@28eaa59a]" name="prelink_explore" class="tests.AutomationTest"/>
+      </group> <!-- pre -->
+      <group name="laptopLinks">
+        <method signature="AutomationTest.LaptopLinks()[pri:14, instance:tests.AutomationTest@28eaa59a]" name="LaptopLinks" class="tests.AutomationTest"/>
+      </group> <!-- laptopLinks -->
+      <group name="upload">
+        <method signature="AutomationTest.Upload_Files_test()[pri:2, instance:tests.AutomationTest@28eaa59a]" name="Upload_Files_test" class="tests.AutomationTest"/>
+      </group> <!-- upload -->
+      <group name="tabs">
+        <method signature="AutomationTest.Tabs()[pri:6, instance:tests.AutomationTest@28eaa59a]" name="Tabs" class="tests.AutomationTest"/>
+      </group> <!-- tabs -->
+      <group name="dragDrop">
+        <method signature="AutomationTest.Draganddrop()[pri:11, instance:tests.AutomationTest@28eaa59a]" name="Draganddrop" class="tests.AutomationTest"/>
+      </group> <!-- dragDrop -->
+      <group name="dropdown">
+        <method signature="AutomationTest.scrollingDropdown()[pri:13, instance:tests.AutomationTest@28eaa59a]" name="scrollingDropdown" class="tests.AutomationTest"/>
+      </group> <!-- dropdown -->
+      <group name="shadowDom">
+        <method signature="AutomationTest.ShadowDOM()[pri:5, instance:tests.AutomationTest@28eaa59a]" name="ShadowDOM" class="tests.AutomationTest"/>
+      </group> <!-- shadowDom -->
+      <group name="alerts">
+        <method signature="AutomationTest.Alertsandpopups()[pri:8, instance:tests.AutomationTest@28eaa59a]" name="Alertsandpopups" class="tests.AutomationTest"/>
+      </group> <!-- alerts -->
+      <group name="brokenLinks">
+        <method signature="AutomationTest.verifyBrokenLinks()[pri:15, instance:tests.AutomationTest@28eaa59a]" name="verifyBrokenLinks" class="tests.AutomationTest"/>
+      </group> <!-- brokenLinks -->
+      <group name="hover">
+        <method signature="AutomationTest.MouseHover()[pri:9, instance:tests.AutomationTest@28eaa59a]" name="MouseHover" class="tests.AutomationTest"/>
+      </group> <!-- hover -->
+      <group name="download">
+        <method signature="AutomationTest.download()[pri:17, instance:tests.AutomationTest@28eaa59a]" name="download" class="tests.AutomationTest"/>
+      </group> <!-- download -->
+      <group name="doubleClick">
+        <method signature="AutomationTest.doubleClick()[pri:10, instance:tests.AutomationTest@28eaa59a]" name="doubleClick" class="tests.AutomationTest"/>
+      </group> <!-- doubleClick -->
+      <group name="form">
+        <method signature="AutomationTest.Form()[pri:4, instance:tests.AutomationTest@28eaa59a]" name="Form" class="tests.AutomationTest"/>
+      </group> <!-- form -->
+      <group name="gui">
+        <method signature="AutomationTest.GUI_Elements_test()[pri:1, instance:tests.AutomationTest@28eaa59a]" name="GUI_Elements_test" class="tests.AutomationTest"/>
+      </group> <!-- gui -->
+      <group name="dynamicButton">
+        <method signature="AutomationTest.Dynamic_Button()[pri:7, instance:tests.AutomationTest@28eaa59a]" name="Dynamic_Button" class="tests.AutomationTest"/>
+      </group> <!-- dynamicButton -->
+      <group name="table">
+        <method signature="AutomationTest.TableTest()[pri:3, instance:tests.AutomationTest@28eaa59a]" name="TableTest" class="tests.AutomationTest"/>
+      </group> <!-- table -->
+      <group name="AJAXpage">
+        <method signature="AutomationTest.Hidden_Elements_AJAX()[pri:16, instance:tests.AutomationTest@28eaa59a]" name="Hidden_Elements_AJAX" class="tests.AutomationTest"/>
+      </group> <!-- AJAXpage -->
+    </groups>
+    <test started-at="2026-06-10T18:03:56 IST" name="Full 15-Component Regression Run" finished-at="2026-06-10T18:08:48 IST" duration-ms="292368">
+      <class name="tests.AutomationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:03:56 IST" name="setUp" finished-at="2026-06-10T18:04:17 IST" duration-ms="21077" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Opening Chrome Browser...]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to: https://testautomationpractice.blogspot.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="prelink_explore()[pri:0, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:04:17 IST" name="prelink_explore" finished-at="2026-06-10T18:04:43 IST" duration-ms="25926" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Browsing all navigation bar links...]]>
+            </line>
+            <line>
+              <![CDATA[Success: All nav bar links browsed successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- prelink_explore -->
+        <test-method signature="GUI_Elements_test()[pri:1, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:04:43 IST" name="GUI_Elements_test" finished-at="2026-06-10T18:05:09 IST" duration-ms="25635" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Filling out registration form details...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Form elements submitted successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- GUI_Elements_test -->
+        <test-method signature="Upload_Files_test()[pri:2, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:05:09 IST" name="Upload_Files_test" finished-at="2026-06-10T18:05:14 IST" duration-ms="4720" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Uploading sample files...]]>
+            </line>
+            <line>
+              <![CDATA[Step: Cleaning up dummy test files...]]>
+            </line>
+            <line>
+              <![CDATA[Success: File uploads verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Upload_Files_test -->
+        <test-method signature="TableTest()[pri:3, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:05:14 IST" name="TableTest" finished-at="2026-06-10T18:05:29 IST" duration-ms="15373" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Auditing table data structures...]]>
+            </line>
+            <line>
+              <![CDATA[Step: Static Table Validation...]]>
+            </line>
+            <line>
+              <![CDATA[Step: Dynamic Table Extraction...]]>
+            </line>
+            <line>
+              <![CDATA[Step: Traversing pagination sheets...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Web Table checks pass cleanly.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TableTest -->
+        <test-method signature="Form()[pri:4, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:05:29 IST" name="Form" finished-at="2026-06-10T18:05:37 IST" duration-ms="7333" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Typing paragraphs into form sections...]]>
+            </line>
+            <line>
+              <![CDATA[Success: All form text blocks verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Form -->
+        <test-method signature="ShadowDOM()[pri:5, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:05:37 IST" name="ShadowDOM" finished-at="2026-06-10T18:05:59 IST" duration-ms="22230" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: ERunning: Shadow DOM Test...]]>
+            </line>
+            <line>
+              <![CDATA[Step: Cleaning up dummy test files...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Shadow DOM .]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ShadowDOM -->
+        <test-method signature="Tabs()[pri:6, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:05:59 IST" name="Tabs" finished-at="2026-06-10T18:06:12 IST" duration-ms="13628" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Testing dynamic multi-tab features...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Browser tabs handled cleanly.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Tabs -->
+        <test-method signature="Dynamic_Button()[pri:7, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:12 IST" name="Dynamic_Button" finished-at="2026-06-10T18:06:17 IST" duration-ms="5008" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Clicking dynamic button element...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Dynamic button interaction complete.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Dynamic_Button -->
+        <test-method signature="Alertsandpopups()[pri:8, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:17 IST" name="Alertsandpopups" finished-at="2026-06-10T18:06:44 IST" duration-ms="26177" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Handling alerts, confirms, prompts and child windows...]]>
+            </line>
+            <line>
+              <![CDATA[Success: All popup dialogs resolved.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Alertsandpopups -->
+        <test-method signature="MouseHover()[pri:9, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:44 IST" name="MouseHover" finished-at="2026-06-10T18:06:48 IST" duration-ms="4589" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Hovering over menu to reveal links...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Mouse hover dropdown selection completed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MouseHover -->
+        <test-method signature="doubleClick()[pri:10, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:48 IST" name="doubleClick" finished-at="2026-06-10T18:06:49 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Simulating double click action...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Double click event registered.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- doubleClick -->
+        <test-method signature="Draganddrop()[pri:11, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:49 IST" name="Draganddrop" finished-at="2026-06-10T18:06:51 IST" duration-ms="2542" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Dragging element to drop zone...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Drag and drop operation finished.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Draganddrop -->
+        <test-method signature="slider()[pri:12, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:51 IST" name="slider" finished-at="2026-06-10T18:06:56 IST" duration-ms="5049" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Shifting minimum and maximum slider bars...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Slider positions adjusted successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- slider -->
+        <test-method signature="scrollingDropdown()[pri:13, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:56 IST" name="scrollingDropdown" finished-at="2026-06-10T18:06:59 IST" duration-ms="2978" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Locating and picking item from scrollable dropdown...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Target item chosen from list.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- scrollingDropdown -->
+        <test-method signature="LaptopLinks()[pri:14, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:06:59 IST" name="LaptopLinks" finished-at="2026-06-10T18:07:23 IST" duration-ms="23898" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Checking store redirection pages (Apple, Dell, Lenovo)...]]>
+            </line>
+            <line>
+              <![CDATA[Success: External stores loaded fine.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LaptopLinks -->
+        <test-method signature="verifyBrokenLinks()[pri:15, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:07:23 IST" name="verifyBrokenLinks" finished-at="2026-06-10T18:08:08 IST" duration-ms="44890" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Scanning HTTP response codes for dead links...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Broken link network sweep finished.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenLinks -->
+        <test-method signature="Hidden_Elements_AJAX()[pri:16, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:08:08 IST" name="Hidden_Elements_AJAX" finished-at="2026-06-10T18:08:27 IST" duration-ms="19429" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Toggling hidden elements and loading AJAX content...]]>
+            </line>
+            <line>
+              <![CDATA[Success: Hidden elements toggled and AJAX content loaded.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Hidden_Elements_AJAX -->
+        <test-method signature="download()[pri:17, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:08:27 IST" name="download" finished-at="2026-06-10T18:08:47 IST" duration-ms="20118" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Step: Triggering file download...]]>
+            </line>
+            <line>
+              <![CDATA[Success: File downloaded successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- download -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AutomationTest@28eaa59a]" started-at="2026-06-10T18:08:47 IST" name="tearDown" finished-at="2026-06-10T18:08:48 IST" duration-ms="578" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing browser and killing driver session...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AutomationTest -->
+    </test> <!-- Full 15-Component Regression Run -->
+  </suite> <!-- Master Automation Suite -->
+</testng-results>
