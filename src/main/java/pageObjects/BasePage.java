@@ -1,9 +1,9 @@
 package pageObjects;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.URL;
@@ -22,10 +22,8 @@ public class BasePage {
         this.actions = new Actions(driver);
     }
 
-
     public static WebDriver createDriver() {
         String gridUrl = System.getenv("GRID_URL");
-
         if (gridUrl != null) {
             // Running in Docker
             try {
@@ -34,7 +32,12 @@ public class BasePage {
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 System.out.println("Running on Grid: " + gridUrl);
-                return new RemoteWebDriver(new URL(gridUrl), options);
+
+                RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL(gridUrl), options);
+             
+                remoteDriver.setFileDetector(new LocalFileDetector());
+                return remoteDriver;
+
             } catch (Exception e) {
                 throw new RuntimeException("Failed to connect to Grid: " + e.getMessage());
             }
