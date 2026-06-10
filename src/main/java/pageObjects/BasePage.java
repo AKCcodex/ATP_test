@@ -28,7 +28,6 @@ public class BasePage {
             // Running in Docker
             try {
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
                 options.addArguments("--no-sandbox");
                 options.addArguments("--disable-dev-shm-usage");
                 System.out.println("Running on Grid: " + gridUrl);

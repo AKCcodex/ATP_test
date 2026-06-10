@@ -20,6 +20,7 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_VNC_NO_PASSWORD=1
+	  - SE_START_XVFB=true   
     ports:
       - "7900:7900"
 
