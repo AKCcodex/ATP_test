@@ -5,17 +5,20 @@
     <classes>
       <class name="tests.AutomationTest">
         <methods>
+          <include name="download"/>
           <include name="doubleClick"/>
           <include name="Tabs"/>
           <include name="scrollingDropdown"/>
           <include name="setUp"/>
+          <include name="verifyBrokenLinks"/>
           <include name="LaptopLinks"/>
           <include name="ShadowDOM"/>
-          <include name="Upload_Files_test"/>
+          <include name="Hidden_Elements_AJAX"/>
           <include name="slider"/>
           <include name="Dynamic_Button"/>
-          <include name="Form"/>
+          <include name="GUI_Elements_test"/>
           <include name="Alertsandpopups"/>
+          <include name="TableTest"/>
           <include name="Draganddrop"/>
           <include name="MouseHover"/>
           <include name="tearDown"/>

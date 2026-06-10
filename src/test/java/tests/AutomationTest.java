@@ -98,22 +98,36 @@ public class AutomationTest {
         Reporter.log("Success: Form elements submitted successfully.", true);
         System.out.println("<<< Finished: GUI Elements Test\n");
     }
-
+    private String getFilePath(String fileName) {
+       
+        String dockerPath = "/app/testFiles/" + fileName;
+        File dockerFile = new File(dockerPath);
+        
+        if (dockerFile.exists()) {
+            return dockerPath;
+        }
+        
+      
+        return System.getProperty("user.dir") 
+               + "/src/test/resources/testFiles/" 
+               + fileName;
+    }
     @Test(priority = 2, groups = {"upload"})
     public void Upload_Files_test() throws IOException {
+    	
         System.out.println(">>> Running: Upload Files Test");
         Reporter.log("Step: Uploading sample files...", true);
         ExtentReportManager.logStep("Executing OS file-path data uploads for text attachments.");
+        String filePath1 = getFilePath("demo1.txt");
+        String filePath2 = getFilePath("demo2.txt");
+       
         
-        File dummyFile1 = File.createTempFile("demo1", ".txt");
-        File dummyFile2 = File.createTempFile("demo2", ".txt");
 
-        uploadFiles.uploadSingleFile(dummyFile1.getAbsolutePath())
-                   .uploadMultiFiles(dummyFile1.getAbsolutePath(), dummyFile2.getAbsolutePath());
+        uploadFiles.uploadSingleFile(filePath1)
+                   .uploadMultiFiles(filePath1, filePath2);
                    
-        Reporter.log("Step: Cleaning up dummy test files...", true);
-        dummyFile1.delete();
-        dummyFile2.delete();
+       
+       
         
         Reporter.log("Success: File uploads verified.", true);
         System.out.println("<<< Finished: Upload Files Test\n");
@@ -166,23 +180,23 @@ public class AutomationTest {
 
     @Test(priority = 5, groups = {"shadowDom"})
     public void ShadowDOM() throws IOException {
-    	File dummyFile1 = File.createTempFile("demo1", ".txt");
+    	 String filePath1 = getFilePath("demo1.txt");
         System.out.println(">>> Running: Shadow DOM Test");
         Reporter.log("Step: ERunning: Shadow DOM Test...", true);
         ExtentReportManager.logStep("Step: Running: Shadow DOM Test...");
         
         ShadowDOMtest.Blog()
         .text("Sample text")
-        .upload(dummyFile1.getAbsolutePath())
+        .upload(filePath1)
         .Youtube();
         Reporter.log("Step: Cleaning up dummy test files...", true);
-        dummyFile1.delete();
+      
         Reporter.log("Success: Shadow DOM .", true);
         System.out.println("<<< Finished: Shadow DOM Test\n");
     }
 
     @Test(priority = 6, groups = {"tabs"})
-    public void Tabs() {
+    public void Tabs() throws InterruptedException {
         System.out.println(">>> Running: Browser Tabs Test");
         Reporter.log("Step: Testing dynamic multi-tab features...", true);
         ExtentReportManager.logStep("Switching browser tab views using textual identifiers.");

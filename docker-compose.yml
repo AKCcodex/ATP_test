@@ -30,3 +30,6 @@ services:
       - chrome-node
     environment:
       - GRID_URL=http://selenium-hub:4444/wd/hub
+	  selenium-tests:
+	     volumes:
+	       - ./src/test/resources/testFiles:/app/testFiles

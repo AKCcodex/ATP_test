@@ -23,7 +23,7 @@ public class TC06_tabpage extends BasePage{
 
 
 
-    public TC06_tabpage text(String fill) {
+    public TC06_tabpage text(String fill) throws InterruptedException {
     	 WebElement textinput = driver.findElement(textin);
     	 textinput.sendKeys(fill);
     	 WebElement searchcheck = driver.findElement(search);
@@ -31,7 +31,7 @@ public class TC06_tabpage extends BasePage{
     	 applyObservationDelay();
     	 
     	 String originalWindow = driver.getWindowHandle();
-    	 
+    	 Thread.sleep(2000);
      	WebElement linkElement = driver.findElement(clickfirst);
          String targetUrl = linkElement.getAttribute("href");
 
