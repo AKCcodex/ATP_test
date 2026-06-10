@@ -6,7 +6,8 @@ COPY pom.xml .
 COPY src ./src
 COPY testng.xml .
 
-COPY src/test/resources/testFiles /app/testFiles
+
+COPY src/test/resources/testFiles/ /app/testFiles/
 
 RUN mvn dependency:resolve
 
