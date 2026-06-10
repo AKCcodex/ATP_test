@@ -5,28 +5,30 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/yourrepo/yourproject.git'
+                git branch: 'master',
+                    url: 'https://github.com/AKCcodex/ATP_test.git'
             }
         }
 
         stage('Start Docker Grid') {
             steps {
-                sh 'docker-compose up -d selenium-hub chrome-node'
-                sh 'sleep 10' // wait for grid to be ready
+                sh '/snap/bin/docker-compose down || true'
+                sh 'docker rm -f selenium-hub chrome-node test-runner || true'
+                sh '/snap/bin/docker-compose up -d selenium-hub chrome-node'
+                sh 'sleep 10'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'docker-compose up --build test-runner'
+                sh '/snap/bin/docker-compose up --build test-runner'
             }
         }
 
         stage('Publish Report') {
             steps {
                 publishHTML(target: [
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'test-output',
@@ -35,18 +37,11 @@ pipeline {
                 ])
             }
         }
-
-        stage('Cleanup') {
-            steps {
-                sh 'docker-compose down'
-            }
-        }
     }
 
     post {
         always {
-            sh 'docker-compose down'
-            cleanWs()
+            sh '/snap/bin/docker-compose down || true'
         }
     }
 }
