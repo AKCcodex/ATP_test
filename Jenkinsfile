@@ -12,16 +12,16 @@ pipeline {
 
         stage('Start Docker Grid') {
             steps {
-                sh '/snap/bin/docker-compose down || true'
+                sh 'docker-compose down || true'
                 sh 'docker rm -f selenium-hub chrome-node test-runner || true'
-                sh '/snap/bin/docker-compose up -d selenium-hub chrome-node'
+                sh 'docker-compose up -d selenium-hub chrome-node'
                 sh 'sleep 10'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh '/snap/bin/docker-compose up --build test-runner'
+                sh 'docker-compose up --build test-runner'
             }
         }
 
@@ -41,7 +41,7 @@ pipeline {
 
     post {
         always {
-            sh '/snap/bin/docker-compose down || true'
+            sh 'docker-compose down || true'
         }
     }
 }
