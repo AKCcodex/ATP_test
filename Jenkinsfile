@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     stages {
         stage('Checkout') {
             steps {
@@ -23,8 +24,9 @@ pipeline {
             }
         }
 
-        stage('Copy Report') {   // ✅ Fallback in case volume didn't work
+        stage('Copy Report') {
             steps {
+                sh 'mkdir -p ./test-output'
                 sh 'docker cp test-runner:/app/test-output/ExtentReport.html ./test-output/ExtentReport.html || true'
             }
         }
