@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
                 git branch: 'master',
@@ -21,13 +22,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'docker-compose up --build test-runner'
-            }
-        }
-
-        stage('Copy Report') {
-            steps {
-                sh 'mkdir -p ./test-output'
-                sh 'docker cp test-runner:/app/test-output/ExtentReport.html ./test-output/ExtentReport.html || true'
             }
         }
 

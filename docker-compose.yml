@@ -29,5 +29,4 @@ services:
       - chrome-node
     environment:
       - GRID_URL=http://selenium-hub:4444/wd/hub
-    volumes:
-      - ./test-output:/app/test-output   # ✅ Report written directly to Jenkins host
+  
