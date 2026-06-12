@@ -1,7 +1,5 @@
 version: '3.8'
-
 services:
-
   selenium-hub:
     image: selenium/hub:4.18.1
     container_name: selenium-hub
@@ -31,3 +29,5 @@ services:
       - chrome-node
     environment:
       - GRID_URL=http://selenium-hub:4444/wd/hub
+    volumes:
+      - ./test-output:/app/test-output   # ✅ Report written directly to Jenkins host

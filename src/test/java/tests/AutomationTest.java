@@ -31,7 +31,7 @@ public class AutomationTest {
      private TC15_verifyBrokenLinkspage  verifyBrokenLinkstest;
      private TC16_Hidden_Elements_AJAXpage   Hidden_Elements_AJAXtest;
      private TC17_downloadpage   downloadtest;
-     private static final int OBSERVATION_DELAY = 2; 
+     private static final int OBSERVATION_DELAY = 2000; 
      private static final String BASE_URL = "https://testautomationpractice.blogspot.com";
 
      @BeforeClass(alwaysRun = true)

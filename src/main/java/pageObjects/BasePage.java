@@ -25,7 +25,7 @@ public class BasePage {
     public static WebDriver createDriver() {
         String gridUrl = System.getenv("GRID_URL");
         if (gridUrl != null) {
-            // Running in Docker
+
             try {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--no-sandbox");
